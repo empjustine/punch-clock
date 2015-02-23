@@ -1,0 +1,7 @@
+#!/bin/sh
+
+ISO_8601_CALENDAR_DATE='+%Y-%m-%dT%H:%M:%S%z'
+TIME_CARD="${XDG_DATA_HOME:-$HOME/.local/share}/punch_clock"
+
+date -- "$ISO_8601_CALENDAR_DATE" | tee --append "$TIME_CARD"
+

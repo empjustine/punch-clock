@@ -1,0 +1,6 @@
+#!/bin/sh
+
+TIME_CARD="${XDG_DATA_HOME:-$HOME/.local/share}/punch_clock"
+
+cat "$TIME_CARD"
+
